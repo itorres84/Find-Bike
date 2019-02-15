@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail Bike View Controller-->
+        <scene sceneID="XJ1-QA-Nrj">
+            <objects>
+                <viewController storyboardIdentifier="DetailBikeViewController" id="zIc-eW-6fX" customClass="DetailBikeViewController" customModule="findBike" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z2g-4m-atm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cby-dO-hbq">
+                                <rect key="frame" x="20" y="45" width="335" height="226.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtR-Bf-Uhd">
+                                        <rect key="frame" x="8" y="8" width="319" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="l7Z-oK-WQr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <color key="textColor" red="0.4431372549" green="0.157869488" blue="0.54865080119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="wap-gJ-QW4">
+                                        <rect key="frame" x="42.5" y="78" width="250" height="100"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mountain_biking" translatesAutoresizingMaskIntoConstraints="NO" id="ZNM-wO-Mnt">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="GWt-TT-LxF"/>
+                                                    <constraint firstAttribute="height" constant="100" id="o6x-gL-VSm"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="park" translatesAutoresizingMaskIntoConstraints="NO" id="doS-mZ-sbL">
+                                                <rect key="frame" x="150" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="loZ-BQ-SoQ"/>
+                                                    <constraint firstAttribute="height" constant="100" id="xDW-ZP-uiZ"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Im-fl-VCh">
+                                        <rect key="frame" x="87" y="186" width="11.5" height="24"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3IH-hm-qJb">
+                                        <rect key="frame" x="237" y="186" width="11.5" height="24"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.82773070715962438" alpha="0.6332251320422535" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="3IH-hm-qJb" firstAttribute="centerX" secondItem="doS-mZ-sbL" secondAttribute="centerX" id="932-sF-Pt3"/>
+                                    <constraint firstItem="3IH-hm-qJb" firstAttribute="top" secondItem="wap-gJ-QW4" secondAttribute="bottom" constant="8" id="MiM-il-yCo"/>
+                                    <constraint firstItem="jtR-Bf-Uhd" firstAttribute="top" secondItem="cby-dO-hbq" secondAttribute="top" constant="8" id="Rhj-J6-WNO"/>
+                                    <constraint firstAttribute="trailing" secondItem="jtR-Bf-Uhd" secondAttribute="trailing" constant="8" id="W73-IN-s4e"/>
+                                    <constraint firstItem="1Im-fl-VCh" firstAttribute="top" secondItem="wap-gJ-QW4" secondAttribute="bottom" constant="8" id="WQN-3R-NXA"/>
+                                    <constraint firstItem="wap-gJ-QW4" firstAttribute="centerX" secondItem="cby-dO-hbq" secondAttribute="centerX" id="Z9m-dA-T4U"/>
+                                    <constraint firstItem="wap-gJ-QW4" firstAttribute="top" secondItem="jtR-Bf-Uhd" secondAttribute="bottom" constant="10" id="e4A-r5-rtH"/>
+                                    <constraint firstItem="1Im-fl-VCh" firstAttribute="centerX" secondItem="ZNM-wO-Mnt" secondAttribute="centerX" id="qXU-Cc-Myi"/>
+                                    <constraint firstItem="jtR-Bf-Uhd" firstAttribute="leading" secondItem="cby-dO-hbq" secondAttribute="leading" constant="8" id="tk1-w3-x8r"/>
+                                </constraints>
+                            </view>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="snd-jS-sMO">
+                                <rect key="frame" x="0.0" y="281.5" width="375" height="385.5"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cby-dO-hbq" firstAttribute="height" secondItem="3pi-N7-nbV" secondAttribute="height" multiplier="0.35" id="1c0-UO-UyX"/>
+                            <constraint firstItem="3pi-N7-nbV" firstAttribute="trailing" secondItem="cby-dO-hbq" secondAttribute="trailing" constant="20" id="InC-Uv-yYF"/>
+                            <constraint firstItem="cby-dO-hbq" firstAttribute="top" secondItem="3pi-N7-nbV" secondAttribute="top" constant="25" id="Jdw-Ti-kpo"/>
+                            <constraint firstItem="snd-jS-sMO" firstAttribute="top" secondItem="cby-dO-hbq" secondAttribute="bottom" constant="10" id="KuC-q5-moH"/>
+                            <constraint firstItem="snd-jS-sMO" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" id="eZL-4h-tR5"/>
+                            <constraint firstItem="snd-jS-sMO" firstAttribute="trailing" secondItem="3pi-N7-nbV" secondAttribute="trailing" id="lGB-VB-bWd"/>
+                            <constraint firstItem="3pi-N7-nbV" firstAttribute="bottom" secondItem="snd-jS-sMO" secondAttribute="bottom" id="vA6-8a-bp7"/>
+                            <constraint firstItem="cby-dO-hbq" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" constant="20" id="wMY-aP-SaJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3pi-N7-nbV"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblNombre" destination="jtR-Bf-Uhd" id="jOz-eh-2Kg"/>
+                        <outlet property="lblNumBike" destination="1Im-fl-VCh" id="jTO-Vr-75v"/>
+                        <outlet property="lblNumSlots" destination="3IH-hm-qJb" id="6GE-ru-Vbc"/>
+                        <outlet property="mapView" destination="snd-jS-sMO" id="6Uy-wa-9wL"/>
+                        <outlet property="viewDeta" destination="cby-dO-hbq" id="hOp-tI-IzY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rle-ol-2Ax" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.80000000000001" y="302.6986506746627"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mountain_biking" width="96" height="96"/>
+        <image name="park" width="270" height="204"/>
+    </resources>
+</document>

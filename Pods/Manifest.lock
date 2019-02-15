@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (4.8.1)
+  - EVReflection/Alamofire (5.9.0):
+    - Alamofire
+    - EVReflection/Core
+  - EVReflection/Core (5.9.0)
+  - GoogleMaps (2.7.0):
+    - GoogleMaps/Maps (= 2.7.0)
+  - GoogleMaps/Base (2.7.0)
+  - GoogleMaps/Maps (2.7.0):
+    - GoogleMaps/Base
+  - GooglePlaces (2.7.0):
+    - GoogleMaps/Base (= 2.7.0)
+  - NVActivityIndicatorView (4.6.1):
+    - NVActivityIndicatorView/Presenter (= 4.6.1)
+  - NVActivityIndicatorView/Presenter (4.6.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - EVReflection/Alamofire
+  - GoogleMaps
+  - GooglePlaces
+  - NVActivityIndicatorView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - EVReflection
+    - GoogleMaps
+    - GooglePlaces
+    - NVActivityIndicatorView
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  EVReflection: 52aa00a9035145b1fcf99acae01b782ecc4adad7
+  GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
+  GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
+  NVActivityIndicatorView: 4ca19fccc84595a78957336a086d00a49be6ce61
+
+PODFILE CHECKSUM: c84ac0ad5da32d9302fd8118b1ba2d5f57c54fcc
+
+COCOAPODS: 1.5.3

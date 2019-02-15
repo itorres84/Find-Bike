@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--List Bikes View Controller-->
+        <scene sceneID="XJ1-QA-Nrj">
+            <objects>
+                <viewController storyboardIdentifier="ListBikesViewController" id="zIc-eW-6fX" customClass="ListBikesViewController" customModule="findBike" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z2g-4m-atm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estaciones cercanas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epy-iN-RCp">
+                                <rect key="frame" x="98.5" y="45" width="178.5" height="21.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="0.44313725490196076" green="0.157869488" blue="0.54865080119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ye4-40-jjn">
+                                <rect key="frame" x="0.0" y="86.5" width="375" height="580.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="EstatusTVC" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellBike" rowHeight="90" id="FHB-Q9-KRT" customClass="EstatusTVC" customModule="findBike" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FHB-Q9-KRT" id="MZ5-P3-B5V">
+                                            <rect key="frame" x="0.0" y="0.0" width="308" height="89.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UcA-PO-zCo">
+                                                    <rect key="frame" x="15" y="40" width="285" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="1cN-8p-lDu"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" red="0.4431372549" green="0.157869488" blue="0.54865080119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mountain_biking" translatesAutoresizingMaskIntoConstraints="NO" id="eVF-lh-sEE">
+                                                    <rect key="frame" x="10" y="0.0" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="A6Q-EV-YPE"/>
+                                                        <constraint firstAttribute="width" constant="40" id="bhT-F9-bPb"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="park" translatesAutoresizingMaskIntoConstraints="NO" id="pQe-32-S52">
+                                                    <rect key="frame" x="103" y="-5" width="60" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="MaM-K7-H37"/>
+                                                        <constraint firstAttribute="width" constant="60" id="k5q-HS-jUA"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b90-il-q56">
+                                                    <rect key="frame" x="58" y="5" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="5Uo-85-6tr"/>
+                                                        <constraint firstAttribute="width" constant="30" id="b5D-p2-7vt"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppp-Yg-C5K">
+                                                    <rect key="frame" x="163" y="5" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="Ch8-Fb-3ZZ"/>
+                                                        <constraint firstAttribute="width" constant="30" id="aG1-dv-o4k"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="eVF-lh-sEE" firstAttribute="top" secondItem="MZ5-P3-B5V" secondAttribute="top" id="9Ax-02-5Fh"/>
+                                                <constraint firstItem="b90-il-q56" firstAttribute="centerY" secondItem="eVF-lh-sEE" secondAttribute="centerY" id="IGv-E9-job"/>
+                                                <constraint firstItem="b90-il-q56" firstAttribute="leading" secondItem="eVF-lh-sEE" secondAttribute="trailing" constant="8" id="Ndk-34-9tK"/>
+                                                <constraint firstItem="pQe-32-S52" firstAttribute="leading" secondItem="b90-il-q56" secondAttribute="trailing" constant="15" id="Oww-Fc-ng4"/>
+                                                <constraint firstItem="UcA-PO-zCo" firstAttribute="top" secondItem="eVF-lh-sEE" secondAttribute="bottom" id="UxP-rH-K9i"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="UcA-PO-zCo" secondAttribute="trailing" id="cym-B4-Yja"/>
+                                                <constraint firstItem="ppp-Yg-C5K" firstAttribute="leading" secondItem="pQe-32-S52" secondAttribute="trailing" id="gBy-on-lRr"/>
+                                                <constraint firstItem="pQe-32-S52" firstAttribute="centerY" secondItem="eVF-lh-sEE" secondAttribute="centerY" id="kOX-kX-mzW"/>
+                                                <constraint firstItem="UcA-PO-zCo" firstAttribute="leading" secondItem="MZ5-P3-B5V" secondAttribute="leadingMargin" id="o3O-zq-AIj"/>
+                                                <constraint firstItem="eVF-lh-sEE" firstAttribute="leading" secondItem="MZ5-P3-B5V" secondAttribute="leading" constant="10" id="ojY-Uu-cHP"/>
+                                                <constraint firstItem="ppp-Yg-C5K" firstAttribute="centerY" secondItem="b90-il-q56" secondAttribute="centerY" id="yFE-P1-Ur1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblNumBike" destination="b90-il-q56" id="hnt-RG-QR4"/>
+                                            <outlet property="lblNumSlots" destination="ppp-Yg-C5K" id="bz4-Dx-HrY"/>
+                                            <outlet property="lblTitle" destination="UcA-PO-zCo" id="c8h-8O-ga9"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="zIc-eW-6fX" id="vLP-iV-z5A"/>
+                                    <outlet property="delegate" destination="zIc-eW-6fX" id="vvq-1z-hcr"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ye4-40-jjn" firstAttribute="top" secondItem="epy-iN-RCp" secondAttribute="bottom" constant="20" id="7nf-Dg-xKN"/>
+                            <constraint firstItem="epy-iN-RCp" firstAttribute="top" secondItem="3pi-N7-nbV" secondAttribute="top" constant="25" id="7qg-5d-3VJ"/>
+                            <constraint firstItem="ye4-40-jjn" firstAttribute="bottom" secondItem="3pi-N7-nbV" secondAttribute="bottom" id="TpT-ca-v5c"/>
+                            <constraint firstItem="epy-iN-RCp" firstAttribute="centerX" secondItem="Z2g-4m-atm" secondAttribute="centerX" id="Une-I9-Dg3"/>
+                            <constraint firstItem="ye4-40-jjn" firstAttribute="trailing" secondItem="3pi-N7-nbV" secondAttribute="trailing" id="mWZ-gd-X9D"/>
+                            <constraint firstItem="ye4-40-jjn" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" id="mfs-0m-bHX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3pi-N7-nbV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tPr-g2-xEq"/>
+                    <connections>
+                        <outlet property="tableBikes" destination="ye4-40-jjn" id="8BC-hG-ZBd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rle-ol-2Ax" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1244" y="302.6986506746627"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mountain_biking" width="96" height="96"/>
+        <image name="park" width="270" height="204"/>
+    </resources>
+</document>
